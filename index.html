@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Exchange any cryptocurrency quickly and without commission!"
+    />
+    <meta
+      name="keywords"
+      content="Crypto, Cryptocurrency, Exchange, buy, Cryptocurrency Exchange, Crypto Exchange, Cryptocurrency Exchange, Buy Cryptocurrency, Fast Cryptocurrency Exchange, Cryptocurrency Exchange without Commissions, cryptocurrency trading, reliable crypto exchange,low-fee cryptocurrency exchange, crypto exchange platform, digital asset exchange, crypto exchange for beginners, exchange Bitcoin and Ethereum, crypto rates, fast cryptocurrency exchange, secure crypto exchange"
+    />
+    <title>exchange | Space Exchange | crypto</title>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="left"><h1>SOMETHING NEW</h1></div>
+        <div class="right">
+          <img src="tamplates/Group.svg" alt="" />
+          <h3>SPACE EXCHANGE</h3>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="avatar">
+          <img src="tamplates/ph14 1.png" alt="" class="bg" /><img
+            src="tamplates/robopng1 1.png"
+            alt=""
+            class="fg"
+          />
+        </div>
+        <div class="menu">
+          <img src="tamplates/Subtract.svg" alt="" />
+          <div class="crypto">
+            <form id="exchangeForm">
+              <div class="line-content">
+                <div class="line-line1">
+                  <label for="fromCurrency"></label
+                  ><select
+                    id="fromCurrency"
+                    onchange="updateReceivedAmount()"
+                  ></select
+                  ><input
+                    type="number"
+                    id="amount"
+                    placeholder="1234.56"
+                    oninput="updateReceivedAmount()"
+                  />
+                </div>
+                <br /><br />
+                <h2>TO</h2>
+                <div class="line-line2">
+                  <div id="receivedAmount" class="resultcry"></div>
+                  <label for="toCurrency"></label
+                  ><select
+                    id="toCurrency"
+                    onchange="updateReceivedAmount()"
+                  ></select>
+                </div>
+              </div>
+            </form>
+            <div class="swap-btn"><button id="swapButton">SWAP</button></div>
+          </div>
+        </div>
+        <div class="decor">
+          <img src="tamplates/ldec222.png" alt="" id="rdecr" /><img
+            src="tamplates/ldec.png"
+            alt=""
+            id="ldecr"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

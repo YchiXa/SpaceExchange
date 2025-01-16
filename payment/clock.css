@@ -1,0 +1,60 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 100vh;
+  margin: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/16/22/51/technology-1393583_960_720.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.timer-container {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff7f5f68;
+  transform: translateX(+150%);
+  flex-direction: column;
+}
+
+.timer-label {
+  font-size: 36px;
+  margin-block-end: 20px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.timer {
+  font-size: 72px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: #333;
+  border-radius: 10px;
+  padding: 20px 40px;
+  display: inline-block;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.timer span {
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 90px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+  }
+}
